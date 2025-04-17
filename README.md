@@ -6,6 +6,31 @@ This project processes and analyzes NYC subway turnstile data from 2022. Using P
 
 ## 📁 Project Structure
 
+transit-pipeline/
+├── data/
+│   ├── raw/                        # Original CSVs (e.g., Turnstile2022.csv)
+│   ├── external/                   # Metadata: booth mapping, coordinates, etc.
+│   ├── processed/                  # Cleaned + merged datasets
+│   └── turnstile.db                # Optional SQLite database for SQL queries
+│
+├── scripts/                        # Modular Python scripts
+│   ├── extract.py                  # (Placeholder) Script to fetch/download data
+│   ├── transform.py                # Cleans and processes raw turnstile data
+│   ├── load.py                     # (Placeholder) To load data into a DB or export
+│   └── merge_and_enrich.py         # Merges booth + station + coordinate data
+│
+├── notebooks/
+│   ├── heatmap_visualization.ipynb    # Creates interactive folium heatmap
+│   └── hourly_analysis_sql.ipynb      # Hourly trends using SQL + plotly
+│
+├── visuals/                       # Exported visualizations (HTML format)
+│   ├── turnstile_heatmap.html
+│   └── hourly_entries_chart.html
+│
+├── requirements.txt              # Python packages needed
+├── README.md                     # Project overview + usage
+├── .gitignore                    # Ignore large CSVs, .DS_Store, etc.
+└── LICENSE (optional)
 
 ---
 
