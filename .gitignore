@@ -1,0 +1,4 @@
+data/raw/*
+data/processed/*
+*.csv
+.DS_Store
